@@ -5,15 +5,13 @@
 //  Created by Jaeson Booker on 10/19/18.
 //  Copyright © 2018 Jaeson Booker. All rights reserved.
 //
-//Credit for some riddles go to FiveThirtyEight and WaitButWhy
+//Credit for some riddles go to FiveThirtyEight, WaitButWhy, and J.R.R Tolkien
 import UIKit
 
 class ViewController: UIViewController {
     let formatter : DateFormatter = DateFormatter()
-    let riddleDictionary: [String: String] = ["19/10/18": riddle1, "19/11/18": riddle1, "19/12/18": riddle1, "19/13/18": riddle1, "19/14/18": riddle1, "19/15/18": riddle1, "19/16/18": riddle1]
-    let riddleAnswerDictionary: [String: String] = ["19/10/18": answer1, "19/11/18": answer1, "19/12/18": answer1, "19/13/18": answer1, "19/14/18": answer1, "19/15/18": answer1]
-//    var todaysRiddle: String = "Why do you park in the driveway, but drive in a parkway?"
-//    var yesterdaysAnswer: String = "Riddle: If the plural for 'goose' is 'geese', why isn't 'moose' meese? Answer: Because the English languages is stupid and you should stop asking stupid questions, Timmy! Now shut up and eat your green vegetables!"
+    let riddleDictionary: [String: String] = ["19/10/18": riddle1, "19/11/18": riddle2, "19/12/18": riddle3, "19/13/18": riddle4, "19/14/18": riddle5, "19/15/18": riddle6]
+    let riddleAnswerDictionary: [String: String] = ["19/10/18": answer1, "19/11/18": answer2, "19/12/18": answer3, "19/13/18": answer4, "19/14/18": answer5, "19/15/18": answer6]
     var buttonSwitch = 0
     @IBAction func yesterdayAnswer(_ sender: UIButton) {
         formatter.dateFormat = "d/M/yy"
