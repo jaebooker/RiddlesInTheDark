@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var riddleQuestion: UITextView!
     override func viewDidLoad() {
+        riddleQuestion.text = "Why do you park in the driveway, but drive in a parkway?"
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
