@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RiddlesInTheDark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cO1-Y8-oSX">
+                                <rect key="frame" x="26" y="46" width="324" height="505"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfV-S4-Z76">
+                                <rect key="frame" x="91" y="591" width="204" height="30"/>
+                                <state key="normal" title="See Yesterday's Answer"/>
+                                <connections>
+                                    <segue destination="ium-H9-wK3" kind="showDetail" id="dWt-dk-C0i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GfV-S4-Z76" secondAttribute="trailing" constant="80" id="9Vh-re-T9h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cO1-Y8-oSX" secondAttribute="bottom" constant="116" id="Def-b5-9j7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GfV-S4-Z76" secondAttribute="bottom" constant="46" id="GOg-Hg-5fB"/>
+                            <constraint firstItem="GfV-S4-Z76" firstAttribute="top" secondItem="cO1-Y8-oSX" secondAttribute="bottom" constant="40" id="Rlr-4B-RPR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cO1-Y8-oSX" secondAttribute="trailing" constant="25" id="ZCh-FG-zVQ"/>
+                            <constraint firstItem="cO1-Y8-oSX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="afc-Y3-h25"/>
+                            <constraint firstItem="GfV-S4-Z76" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="eLS-vV-wMV"/>
+                            <constraint firstItem="cO1-Y8-oSX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="f21-LH-bhP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KZM-hY-OSA">
+            <objects>
+                <viewController id="ium-H9-wK3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vlc-5H-1g9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rd8-LV-DUF">
+                                <rect key="frame" x="16" y="38" width="343" height="538"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGY-ab-j1L">
+                                <rect key="frame" x="24" y="584" width="335" height="30"/>
+                                <state key="normal" title="Back To Tonight's Riddle"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="N9a-17-MoN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pQ8-2O-qPC" firstAttribute="bottom" secondItem="AGY-ab-j1L" secondAttribute="bottom" constant="53" id="0Ar-cA-zf4"/>
+                            <constraint firstItem="pQ8-2O-qPC" firstAttribute="trailing" secondItem="AGY-ab-j1L" secondAttribute="trailing" constant="16" id="3Bu-Tr-CDD"/>
+                            <constraint firstItem="pQ8-2O-qPC" firstAttribute="trailing" secondItem="Rd8-LV-DUF" secondAttribute="trailing" constant="16" id="B4m-2U-qFC"/>
+                            <constraint firstItem="Rd8-LV-DUF" firstAttribute="leading" secondItem="pQ8-2O-qPC" secondAttribute="leading" constant="16" id="D4I-ln-snn"/>
+                            <constraint firstItem="Rd8-LV-DUF" firstAttribute="top" secondItem="pQ8-2O-qPC" secondAttribute="top" constant="18" id="DpT-5d-k7o"/>
+                            <constraint firstItem="AGY-ab-j1L" firstAttribute="leading" secondItem="pQ8-2O-qPC" secondAttribute="leading" constant="24" id="YyL-ms-KRT"/>
+                            <constraint firstItem="AGY-ab-j1L" firstAttribute="top" secondItem="Rd8-LV-DUF" secondAttribute="bottom" constant="8" id="bjK-8i-D1v"/>
+                            <constraint firstItem="AGY-ab-j1L" firstAttribute="top" secondItem="Rd8-LV-DUF" secondAttribute="bottom" constant="8" id="d5g-6a-c23"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pQ8-2O-qPC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w4S-7r-wdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880.79999999999995" y="134.48275862068968"/>
+        </scene>
+    </scenes>
+</document>
