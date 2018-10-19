@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func yesterdayAnswer(_ sender: UIButton) {
+    }
+    @IBOutlet weak var riddleQuestion: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

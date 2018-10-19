@@ -14,6 +14,7 @@
 		0D4F6DC5217A5B9F00B74BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4F6DC3217A5B9F00B74BDC /* LaunchScreen.storyboard */; };
 		0D4F6DD0217A5B9F00B74BDC /* RiddlesInTheDarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4F6DCF217A5B9F00B74BDC /* RiddlesInTheDarkTests.swift */; };
 		0D4F6DDB217A5B9F00B74BDC /* RiddlesInTheDarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4F6DDA217A5B9F00B74BDC /* RiddlesInTheDarkUITests.swift */; };
+		0D4F6DEB217A614E00B74BDC /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4F6DEA217A614E00B74BDC /* AnswerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0D4F6DD6217A5B9F00B74BDC /* RiddlesInTheDarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiddlesInTheDarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4F6DDA217A5B9F00B74BDC /* RiddlesInTheDarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiddlesInTheDarkUITests.swift; sourceTree = "<group>"; };
 		0D4F6DDC217A5B9F00B74BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D4F6DEA217A614E00B74BDC /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				0D4F6DC1217A5B9F00B74BDC /* Assets.xcassets */,
 				0D4F6DC3217A5B9F00B74BDC /* LaunchScreen.storyboard */,
 				0D4F6DC6217A5B9F00B74BDC /* Info.plist */,
+				0D4F6DEA217A614E00B74BDC /* AnswerViewController.swift */,
 			);
 			path = RiddlesInTheDark;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D4F6DEB217A614E00B74BDC /* AnswerViewController.swift in Sources */,
 				0D4F6DBD217A5B9D00B74BDC /* ViewController.swift in Sources */,
 				0D4F6DBB217A5B9D00B74BDC /* AppDelegate.swift in Sources */,
 			);
