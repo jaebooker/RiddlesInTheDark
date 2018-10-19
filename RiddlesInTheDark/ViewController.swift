@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     let formatter : DateFormatter = DateFormatter()
     let riddleDictionary: [String: String] = ["19/10/18": "Why do you park in the driveway, but drive in a parkway?"]
-    let riddleAnswerDictionary: [String: String] = ["19/10/18": "Riddle: If the plural for 'goose' is 'geese', why isn't 'moose' meese? Answer: Because the English languages is stupid and you should stop asking stupid questions, Timmy! Now shut up and eat your green vegetables!"]
+    let riddleAnswerDictionary: [String: String] = ["19/10/18": "Riddle: If the plural for 'goose' is 'geese', why isn't 'moose' meese? \n\nAnswer: Because the English languages is stupid and you should stop asking stupid questions, Timmy! Now shut up and eat your green vegetables!"]
     var todaysRiddle: String = "Why do you park in the driveway, but drive in a parkway?"
     var yesterdaysAnswer: String = "Riddle: If the plural for 'goose' is 'geese', why isn't 'moose' meese? Answer: Because the English languages is stupid and you should stop asking stupid questions, Timmy! Now shut up and eat your green vegetables!"
     var buttonSwitch = 0
