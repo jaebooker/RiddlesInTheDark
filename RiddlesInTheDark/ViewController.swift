@@ -17,20 +17,32 @@ class ViewController: UIViewController {
     var buttonSwitch = 0
     @IBAction func yesterdayAnswer(_ sender: UIButton) {
         formatter.dateFormat = "d/M/yy"
-        var myButtonStr : String = formatter.string(from:   NSDate.init(timeIntervalSinceNow: 0) as Date)
+        let myButtonStr : String = formatter.string(from:   NSDate.init(timeIntervalSinceNow: 0) as Date)
         if buttonSwitch == 0 {
-        riddleQuestion.text = riddleAnswerDictionary[myButtonStr]
-        buttonSwitch = 1
+            if riddleAnswerDictionary[myButtonStr] != nil {
+                riddleQuestion.text = riddleAnswerDictionary[myButtonStr]
+            } else {
+                riddleQuestion.text = "There wasn't a riddle yesterday."
+            }
+            buttonSwitch = 1
         } else {
-        riddleQuestion.text = riddleDictionary[myButtonStr]
-        buttonSwitch = 0
+            if riddleDictionary[myButtonStr] != nil {
+                riddleQuestion.text = riddleDictionary[myButtonStr]
+            } else {
+                riddleQuestion.text = "No riddle tonight, try again tomorrow."
+            }
+            buttonSwitch = 0
         }
     }
     @IBOutlet weak var riddleQuestion: UITextView!
     override func viewDidLoad() {
         formatter.dateFormat = "d/M/yy"
         let myStr : String = formatter.string(from:   NSDate.init(timeIntervalSinceNow: 0) as Date)
-        riddleQuestion.text = riddleDictionary[myStr]
+        if riddleDictionary[myStr] != nil {
+            riddleQuestion.text = riddleDictionary[myStr]
+        } else {
+            riddleQuestion.text = "No riddle tonight, try again tomorrow."
+        }
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
