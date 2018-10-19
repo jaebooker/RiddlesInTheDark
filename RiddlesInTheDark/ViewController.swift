@@ -9,19 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var todaysRiddle: String = "Why do you park in the driveway, but drive in a parkway?"
+    var yesterdaysAnswer: String = "Riddle: If the plural for 'goose' is 'geese', why isn't 'moose' meese? Answer: Because the English languages is stupid and you should stop asking stupid questions, Timmy! Now shut up and eat your green vegetables!"
     var buttonSwitch = 0
     @IBAction func yesterdayAnswer(_ sender: UIButton) {
         if buttonSwitch == 0 {
-        riddleQuestion.text = "If the plural for 'goose' is 'geese', why isn't 'moose' meese?"
+        riddleQuestion.text = yesterdaysAnswer
         buttonSwitch = 1
         } else {
-        riddleQuestion.text = "Why do you park in the driveway, but drive in a parkway?"
+        riddleQuestion.text = todaysRiddle
         buttonSwitch = 0
         }
     }
     @IBOutlet weak var riddleQuestion: UITextView!
     override func viewDidLoad() {
-        riddleQuestion.text = "Why do you park in the driveway, but drive in a parkway?"
+        riddleQuestion.text = todaysRiddle
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
