@@ -12,9 +12,9 @@ class ViewController: UIViewController {
     //creating date formatter
     let formatter : DateFormatter = DateFormatter()
     //creating riddle dictionary
-    let riddleDictionary: [String: String] = ["19/10/18": riddle1, "19/11/18": riddle2, "19/12/18": riddle3, "19/13/18": riddle4, "19/14/18": riddle5, "19/15/18": riddle6]
+    let riddleDictionary: [String: String] = ["19/10/18": riddle1, "20/10/18": riddle2, "21/10/18": riddle3, "22/10/18": riddle4, "23/10/18": riddle5, "24/10/18": riddle6]
     //creating riddle answer dictionary, for yesterday's riddles
-    let riddleAnswerDictionary: [String: String] = ["19/10/18": answer1, "19/11/18": answer2, "19/12/18": answer3, "19/13/18": answer4, "19/14/18": answer5, "19/15/18": answer6]
+    let riddleAnswerDictionary: [String: String] = ["19/10/18": answer1, "20/10/18": answer2, "21/10/18": answer3, "22/10/18": answer4, "23/10/18": answer5, "24/10/18": answer6]
     //creating switch to determine if you want to view today's riddle or yesterday's answer
     var buttonSwitch = 0
     @IBAction func yesterdayAnswer(_ sender: UIButton) {
